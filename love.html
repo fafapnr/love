@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love of My Life</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 20%;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        #no {
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be the love of my life?</h1>
+        <button id="yes" onclick="alert('Great choice lil dog! ❤️')">Yes</button>
+        <button id="no" onclick="document.getElementById('no').style.animation = 'none'; alert('bad dog!!!')">No</button>
+        <br>
+        <audio controls>
+            <source src="love_of_my_life_queen.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
